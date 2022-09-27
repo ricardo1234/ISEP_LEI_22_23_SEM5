@@ -4,4 +4,4 @@
 
 ## Exercises
 
-* [PL1](PL1/../answers.md)
+* [PL1](PL1/answers.md)
