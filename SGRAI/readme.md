@@ -7,4 +7,5 @@ This course is about the design and implementation of interactive systems, with 
 ## Exercises
 
 * [Three.js Example](DEI_cube.html)
-* [Circle Equation](Circle_Equation_template.html)
+* [Circle Equation](Circle_Equation_template/Circle_Equation_template.html)
+* [Watch](Basic_Watch_template/Watch_template.html)
