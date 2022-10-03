@@ -244,3 +244,13 @@ potenciaNeg(_,0,1):-!.
 potenciaNeg(N,P,R):- P<0, P1 is P+1, potenciaNeg(N,P1,R1), R is R1/N.
 
 potencia(N,P,R):- (potenciaPos(N,P,R));(potenciaNeg(N,P,R)).
+
+fatorial(1,1):-!.
+fatorial(N,R):- N>1, N1 is N-1, fatorial(N1,R1), R is N*R1.
+
+somatorio(J,J,J):-!.
+somatorio(J,K,N):- J<K, J1 is J+1, somatorio(J1,K,N1), N is N1+J.
+
+divide(X, X, 1, 0):-!.
+divide(X, Y, I, R):- X<Y, I is 0, R is X.
+divide(X, Y, I, R):- X1 is X-Y, divide(X1, Y, I1, R), I is I1+1.

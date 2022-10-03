@@ -156,3 +156,88 @@ Testes:
     potencia(2,-3,R).
     R = 0.125.
 ```
+
+#### b)
+
+Fazer predicado recursivo para calcular fatorial de um numero.
+
+```prolog
+    fatorial(1,1):-!.
+    fatorial(N,R):- N>1, N1 is N-1, fatorial(N1,R1), R is N*R1.
+```
+
+Testes:
+
+```prolog
+    fatorial(1,X).
+    X = 1.
+```
+
+```prolog
+    fatorial(4,X).
+    X = 24.
+```
+#### c)
+
+Fazer predicado recursivo para calcular somatorio entre dois numeros.
+
+```prolog
+    somatorio(J,J,J):-!.
+    somatorio(J,K,N):- J<K, J1 is J+1, somatorio(J1,K,N1), N is N1+J.
+```
+
+Testes:
+
+```prolog
+    somatorio(5,5,X).
+    X = 5.
+```
+
+```prolog
+    somatorio(5,9,X).
+    X = 35.
+```
+
+#### b)
+
+Fazer predicado recursivo para calcular fatorial de um numero.
+
+```prolog
+    fatorial(1,1):-!.
+    fatorial(N,R):- N>1, N1 is N-1, fatorial(N1,R1), R is N*R1.
+```
+
+Testes:
+
+```prolog
+    fatorial(1,X).
+    X = 1.
+```
+
+```prolog
+    fatorial(4,X).
+    X = 24.
+```
+#### c)
+
+Fazer predicado recursivo para calcular a divisão inteira e resto entre dois numeros.
+
+```prolog
+    divide(X, X, 1, 0):-!.
+    divide(X, Y, I, R):- X<Y, I is 0, R is X.
+    divide(X, Y, I, R):- X1 is X-Y, divide(X1, Y, I1, R), I is I1+1.
+```
+
+Testes:
+
+```prolog
+    divide(2,2,I,R).
+    I = 1,
+    X = 0
+```
+
+```prolog
+    divide(5,2,I,R).
+    I = 2,
+    X = 1
+```
